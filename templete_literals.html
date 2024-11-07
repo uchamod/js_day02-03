@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./destructuring.js" defer></script>
+  </head>
+  <body>
+    <p id="test"></p>
+
+    <script>
+      let name = "chamod";
+      let age = 20;
+      let output = `my name is ${name} and i am ${age} years old <br>`;
+      document.querySelector("#test").innerHTML = output;
+      output += `next year i will be ${age + 1} years old`;
+      document.querySelector("#test").innerHTML = output;
+    </script>
+  </body>
+</html>

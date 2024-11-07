@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="popup.css" />
+    <script src="./popupscript.js" defer></script>
+  </head>
+  <body>
+    <div id="header">
+      <h2>User Interface</h2>
+      <h3>Name: <span id="myname"></span></h3>
+      <button id="clickme" class="clickme">click</button>
+    </div>
+    <div class="popup-section hidden" id="popup">
+      <h2>what is your name?</h2>
+      <span id="error" style="color: red;"></span>
+      <input
+        type="text"
+        required
+        placeholder="Enter your name"
+        id="poptext"
+        minlength="3"
+        maxlength="20"
+      />
+      <hr />
+      <div id="btns">
+        <button id="ok" class="clickme" type="submit">Ok</button>
+        <button id="cancel" class="clickme">Cancel</button>
+      </div>
+    </div>
+  </body>
+</html>
